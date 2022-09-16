@@ -1,424 +1,405 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 
 }
-
-.hr-tyle-footer{
-    width: 300px;
-    border: 2px solid  rgb(201, 119, 38); 
-     border-radius: 40px;
+img{
+    height: 100%;
+    width: 100%;
 }
-.navbar-brand span{
-width: 150px;
-height: 150px;
-
-font-size: 50px;
-background: url(./img2/heart-healthy-food-1580231690.jpg);
--webkit-background-clip: text;
-color: transparent;
+.header-tittel{
+    text-align: center;
+}
+.header-tittel h1{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 4px 0;
+    color: rgb(167, 167, 86);
 
 }
+.header-tittel p{
+    font-size: 23px;
+    margin: 8px;
+}
+hr{
+    background-color: blueviolet;
+    border: 8px solid blueviolet;
 
-.nav-link{
-    font-size: 30px;
+    width: 600px;
+    margin: auto;
+    border-radius: 20px;
+}
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+}
+nav{
+
     margin: 10px;
 }
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
-    color: #0652DD;
-}
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
-  text-decoration: underline;
-}
 
-.fromaction{
-    position: relative;
-}
+@media  (max-width: 1000px) {
+    nav{
+         background-color: rgb(8, 8, 233);
+         color: white;
 
-.form-control{
-    width: 210px;
-    margin-left: 50px;
-    border-radius: 30px;
-    box-shadow: none;
-
-}
-.btun-type{
-    position: absolute;
-    right: 0;
-    top: 0;
-    border-radius:30px ;
-    background-color: #0652DD;
-    color: white;
-
-}
-/* header-contect */
-
-.header-contect{
-    padding: 10px;
-}
-.header-contect h1{
-    font-size: 80px;
-}
-.header-contect h1 span{
-    color: rgb(223, 37, 4);
-}
-.header-contect p{
-    font-size: 20px;
-}
-
-.header-contect .btn-header{
-    font-size: 35px;
-    background-color: rgb(247, 171, 7);
-   
-    border-radius: 30px;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-}
-
- .header-img{
-background: url(./img2/117543454-celery-carrot-and-green-apple-isolated-on-white-background-.webp);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 100%;
-height: 600px;
-width: 600px;
-border: 0;
-animation: headder-img 4s linear infinite;
-
-}
+ }}
 
 
-@keyframes headder-img {
-     100%{
-        background: url(./img2/istockphoto-516007050-612x612.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 100%;
-height: 600px;
-width: 600px;
-     }
-}
+@media  (min-width: 1000px) {
+   nav{
+        background: url(./images/header-bg.png);
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-clip: cover;
+        height: auto;
+        width: 100%;
+        color: white;
+}}
 
 
-/* service section */
-.btn-service{
-    font-size: 20px;
-    background-color: blue;
-    color:#fff;
-  padding: 10px;
-  border: 0;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.5s;
-
-}
-.btn-service:hover{
-    background-color: brown;
-    color: white;
-}
-.card{
-    overflow: hidden;
-    box-shadow: 1px 3px 4px 5px white;
-    border: 0;
-    margin: 25px 0;
-}
-.card img{
-  height: 350px;
-  width: 100%;
-  line-height: hidden;
-  background-color: #fff;
-transition: 1s;
-
-}
-.card img:hover{
-    transform: scale(1.1);
-  
-}
- 
-
-
-.card-body{
-    text-align: center;
-}
-.card-body h5{
-    font-size: 35px;
-    margin: 15px 0;
-   
-}
-
-.hr-style{
-    border: 4px solid rgb(14, 226, 42);
-    border-radius: 40px;
-    width: 400px;
-    margin: auto;
-    top: 40px;
-
-}
-.tittel h1{
-    font-size: 35px;
-    text-align: center;
-    margin: 15px 0;
-}
-
-.slider-hed {
-   
-  
-    margin: 80px 0 ;
-  
-}
-
-.div-slidwe-img img{
-    width: auto;
-    height: 300px;
-}
-.div-slider h1{
-    font-size: 40px;
-
-}
-.div-slider .heed{
+.nav-link {
+    color: white !important;
     font-size: 25px;
-    color: #ee1010;
-   
-}
-.div-slider h1{
-    font-size: 40px;
-    margin: 10px 0;
-  
+    text-transform: uppercase;
+    margin: 10px;
+    transition: .05s;
 }
 
-/* contact-sectionKK */
+.nav-link:hover{
+    color: fuchsia !important;
+    text-decoration: underline;
+}
 
-.contact-section{
-    
-    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) , url(./img2/spa-floral-background-flat-lay-260nw-518349154.jpg);
-background-position: center;
+
+#header{
+    background: url(./images/banner-slide/Banner-1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
-    width: 100%;
-   
-    margin: 28px 0;
-   
-
-}
-
-
-.contact-fome{
-    background-color: #fff;
-    border: 0;
-    box-shadow: 1px 5px 9px 0 rgba(0,0,0,0.5);
-    height: 450px;
-    width: 300px;
-    margin: 40px 0;
-    padding: 5px;
-}
-label{
-    font-size: 25px;
-    margin: 5px 0;
-}
-input{
-    font-size: 25px;
-    margin: 5px 0;
-
-}
-
-.div-submit{
-    background-color:#ff6348 ;
-    border: 0; padding: 7px ;
-    font-size: 30px;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    width: 250px;
-    margin: 10px 0;
-    
-   
-  
-}
-.contact-text {
-    margin-top: 40px;
-}
-.div-submit a{
-    text-decoration: none;
-    color: white;
-}
-.contact-text h1{
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin: 10px 0;
-}
-.contact-text .text-form{
- font-size: 90px;
- color: hwb(0 4% 11% / 0.925);
- margin: 10px 0;
-}
-.contact-text .web-eidtor{
-    font-size: 45px;
-    margin: 10px 0;
-
-}
-
-
-/* .service -banner */
-
-
-
-.bannner-img-servicce{
-    background: url(./images/services/service1.webp);
     background-position: center;
-    background-size: cover;
-    height: 500px;
     width: 100%;
-    margin: 25px 0;
-    padding: 5px;
-   animation: mim 10s linear infinite;
-   position: relative;
+    height:100%;
+
+
+
 }
-@keyframes mim {
+
+@keyframes headerimg {
 
 
-    0%{
-       
-        height: 500px;
-        width: 100%;
-        background-position: center;
-    background-size: cover;
-    }
-    33%{
-        background: url(./images/services/service2.webp);
-        height: 500px;
-        width: 100%;
-        background-position: center;
-    background-size: cover;
-    }
-    66%{
-        background: url(./images/services/service3.webp);
-        height: 500px;
-        width: 100%;
-        background-position: center;
-    background-size: cover;
-    }
 
-    100%{
-        background: url(./images/services/service6.webp);
-        height: 500px;
-        width: 100%;
-        background-position: center;
-    background-size: cover;
+}
+/* hreader text */
+.header-text {
+  margin-top: 100px;
+}
+.header-text h1{
+    font-size: 100px;
+    font-weight: bold;
+
+}
+.header-text h3{
+    font-size: 30px;
+    background-color: black;
+    padding: 8px;
+    color: white;
+    margin: 10px 0;
+    display:inline-block ;
+
+}
+
+
+@media (min-width:900px) {
+    .header-text p{
+        width: 400px;
     }
 }
 
-.icon-text-1 i{
-    font-size: 80px;
-    margin-right: 200px;
-    color: #0652DD;
-    position: relative;
-    margin: 45px 0;
-}
-.text-1{
-    margin: 45px 0;
-}
 
-.icon-text-2 i{
-    font-size: 80px;
-    margin-right: 300px;
-    color: #0652DD;
-    position: relative;
+.header-text p{
+    line-gap-override: 8px;
+    color: rgb(24, 10, 37);
     margin: 10px 0;
 }
-.text-2{
-    margin: 10px 0;
+.header-text button {
+    outline: none;
+    border: none;
+    margin: 20px 0;
 }
-.icon-text-3 i{
-    font-size: 80px;
-    margin-right: 400px;
-    color: #0652DD;
-    position: relative;
-    margin: 10px 0;
+.header-text button a{
+    list-style: none;
+    border:none;
+    text-transform: uppercase;
+    background-color: rgb(13, 179, 13);
+    padding: 8px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    outline: none;margin: 20px 0;
+
 }
-.text-1{
+
+
+/* header icon */
+
+
+
+.header-icon-box{
+margin: 30px 0;
+}
+
+
+.header-box{
+  background-color: rgba(211, 200, 200, 0.5);
+  text-align: center;
+  transition: 1s;
+  border-radius: 12px;
+}
+
+.header-box:hover{
+    background-color: rgb(37, 32, 32);
+    color: white;
+}
+.header-box i{
+
+
+    font-size: 60px;
+    color: green;
+
+    margin-top: 30px;
+    border: 1px solid green;
+    border-radius: 50%;
+    background-color: white;
+    padding: 15px;
+
+}
+
+.header-box h1{
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+/* about sevtion */
+
+.about-banner{
+    background: url(./images/about/about-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0;
+    margin: 15px 0;
+}
+button {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+button a{
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: green;
+    padding: 10px 15px ;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+button a:hover{
+    background-color: black;
+    color:white;
+}
+.about-banner h1{
+ font-size: 35px;
+ font-weight: bold;
+}
+.about-banner p{
+    font-size: 17px;
+}
+.about-banner p span{
+    font-size: 20px;
+    font-weight: bold;
+}.about-section-2{
+    text-align: center;
     margin: 20px 0;
 }
 
-/* footer section */
+.about-section-2 h1{
+    font-size: 45px;
+
+}
+.about-section-2 p{
+    font-size: 20px;
+
+}
+
+/* .product secion */
+.card-body h5{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card{
+    border: 1px solid green;
+}
+
+.card-2{
+    text-decoration: line-through;
+    color: green;
+}
+
+.product-text img{
+    width: 550px;
+    height: 350px;
+    margin: 20px;
+}
+
+/* gallery sectionkk */
+.header-galery img{
+    transition: 0.8s;
+
+}
+.header-galery img:hover{
+    
+    cursor: pointer;
+    transform: translateY(8px);
+    transform: scale(1.1);
+  
+    
+
+   
+}
 
 
-.footer-section{
-    margin: 25px 0;
-    background-color: rgb(10, 7, 4);
+/* contact sectiomn */
+
+.contact-box{
+    background-color: #9AECDB;
+    padding: 20px;
+}
+
+.formlavel input{
+    font-size: 20px;
+    width: 310px ;
+    margin: 20px;
     padding: 10px;
 }
-.footer-section h1{
+.contact-box textarea{
+    font-size: 20px;
+    width: 93%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.icon-div i{
+    font-size: 50px;
+    margin: 18px 8px ;
+    color:rgb(27, 100, 211);
+    
+}
+
+.text-di h4{
+    font-size: 22px;
+}
+.submit-to{
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right,#1B9CFC, #FC427B);
     color: white;
+    transition: 1s;
+    padding: 15px;
+    border-radius: 30px;
+}
+.submit-to:hover{
+   background-color: white;
+
+
+
+}
+
+
+/* foooter section */
+
+.footer-section{
+    background-image: url(./images/footer-bg/footer_bg.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+
+.footer{
+    padding: 120px 0;
+    color: white;
+}
+
+.div0 {
+    transition: 0.5s;
+
+}
+.div0:hover{
+    transform: translateX(10px);
+}
+.div0 a{
+ font-size: 20px;
+ text-decoration: none;
+ color: white;
+padding: 5px;
+transition: 0.5s;
+}
+.div0 a:hover{
+    text-decoration: underline;
+    
+}
+.div0 i{
+    font-size: 25px; 
+    color: rgb(194, 170, 170);
     margin: 5px 0;
     padding: 5px;
 }
-.footer-section h1:hover{
-text-decoration: underline;
-}
-.footer-1 p{
-    font-size: 18px;
-    color: rgb(97, 91, 84);
-    padding: 5px;
-}
-
-.footer-2 li{
-    list-style: none;
-
-}
-.footer-2 li a{
-    font-size: 25px;
-    color: rgb(97, 91, 84);
-    text-decoration: none;
-}
-
-.footer-icon{
-    text-align: center;
-}
-.footer-icon i{
-    font-size: 40px ;
+.foor-text i{
+    font-size: 28px;
     margin: 5px;
-    border-radius: 50%;
-    padding: 7px;
-    border: none;
-    background-color: rgb(97, 91, 84) ;
-    color: white;
+    color: rgb(63, 168, 63);
+}
+.foor-text p{
+    font-size: 20px;
+    margin: 5px;
 }
 
-.footer-3 p{
-    color: rgb(97, 91, 84);
-}
-
-.footer-4 p{
-    color: rgb(97, 91, 84);
-}
-
-.search-box{
- position: relative;
-}
-
-.search-box input{
-   
-    width: 250px;
-    padding: 4px;
-    height: 40px;
-    border-radius: 40px;
-    box-shadow: none;
-    border: none;
-   
-
-}
-.search-box button{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    height: 40px;
-    margin-top: 5px;
-    border-radius: 40px;
-    background-color: #0652DD;
-    color: white;
+.footer-b5 input{
+    width: 300px;
     
+padding: 10px;
+outline: none;
+border: none;
+
+}
+
+.submit-footer{
+    background-color: rgb(121, 19, 53);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    width: 150px;
+   
+    border-radius: 30px;
+
+}
+.foter-icon-b4 i{
+    font-size: 30px;
+    color: #817ba5;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5px;
 }
